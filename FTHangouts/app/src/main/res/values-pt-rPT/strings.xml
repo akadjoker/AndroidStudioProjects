@@ -1,0 +1,64 @@
+<resources>
+
+        <string name="app_name">ft_hangouts</string>
+        <string name="action_settings">Definições</string>
+        <!-- Strings used for fragments for navigation -->
+        <string name="first_fragment_label">Contactos</string>
+        <string name="second_fragment_label">Detalhes do Contacto</string>
+        <string name="next">Próximo</string>
+        <string name="previous">Anterior</string>
+
+        <string name="hello_first_fragment">Olá primeiro fragmento</string>
+        <string name="hello_second_fragment">Olá segundo fragmento. Arg: %1$s</string>
+
+        <!-- Added strings -->
+        <string name="change_header_color">Mudar Cor da barra</string>
+        <string name="change_language">Mudar Idioma</string>
+        <string name="language_english">Inglês</string>
+        <string name="language_portuguese">Português</string>
+        <string name="language_changed">Idioma alterado com sucesso. A aplicação será reiniciada.</string>
+        <string name="background_time">Aplicação esteve em segundo plano às %s</string>
+        <string name="red">Vermelho</string>
+        <string name="green">Verde</string>
+        <string name="blue">Azul</string>
+        <string name="purple">Roxo</string>
+        <string name="no_contacts">Não existem contactos</string>
+        <string name="add_contact">Adicionar Contacto</string>
+        <string name="edit_contact">Editar Contacto</string>
+        <string name="delete_contact">Eliminar Contacto</string>
+        <string name="name">Nome</string>
+        <string name="phone">Telefone</string>
+        <string name="email">Email</string>
+        <string name="address">Morada</string>
+        <string name="birthday">Data de Nascimento</string>
+        <string name="save">Guardar</string>
+        <string name="cancel">Cancelar</string>
+    <string name="delete">Apaga</string>
+    <string name="contact_not_found">Contacto não econtrado</string>
+        <string name="send_message">Enviar Mensagem</string>
+        <string name="message_hint">Escreve uma mensagem</string>
+    <string name="settings">Configurações</string>
+    <string name="apply">Aplicar</string>
+    <string name="defaultName">Jose dasCoves </string>
+    <string name="tipName">Nome Completo </string>
+    <string name="defaultPhone">910002001 </string>
+    <string name="tipPhone">Escreve o número completo </string>
+    <string name="confirm_delete_contact"> Tens a certeza que queres apagar contacto? </string>
+    <string name="contact_deleted"> Contacto apagado </string>
+    <string name="name_required">Nome é obrigatório</string>
+    <string name="phone_required">Telefone é Obrigatório </string>
+    <string name="contact_added">Contacto foi adicionado</string>
+    <string name="contact_updated">Contactoi foi actualizado</string>
+
+    <string name="data_management">Gestão de Dados</string>
+    <string name="clear_all_messages">Apagar Todas as Mensagens</string>
+    <string name="clear_all_contacts">Apagar Todos os Contactos</string>
+    <string name="confirm_clear_messages">Tem certeza que deseja apagar todas as mensagens? Esta ação não pode ser desfeita.</string>
+    <string name="confirm_clear_contacts">Tem certeza que deseja apagar todos os contactos e suas mensagens? Esta ação não pode ser desfeita.</string>
+    <string name="confirm">Confirmar</string>
+
+    <string name="messages_cleared">Todas as mensagens foram apagadas</string>
+    <string name="contacts_cleared">Todos os contactos foram apagados</string>
+
+
+</resources>

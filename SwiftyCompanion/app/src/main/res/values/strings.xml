@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Swifty Companion</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="first_fragment_label">Search Student</string>
+    <string name="second_fragment_label">User Information</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="_42_logo">42 Logo</string>
+    <string name="swifty_companion">Swifty Companion</string>
+    <string name="view_information_about_42_students">View information about 42 students</string>
+    <string name="login_with_42">Login  </string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="enter_42_username">Enter  username</string>
+    <string name="search_42_students">Search Student</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unable_to_connect_to_42_api">Unable to connect to 42 API</string>
+    <string name="retry">RETRY</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="back">Back</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="completed">Completed</string>
+    <string name="failed">Failed</string>
+    <string name="skills">Skills</string>
+    <string name="projects">Projects</string>
+    <string name="no_skills_available">No skills available</string>
+    <string name="no_projects_available">No projects available</string>
+    <string name="completed_projects">Completed Projects</string>
+    <string name="skills_detail">Skills Detail</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+        <!-- Paleta de cores para tema escuro moderno -->
+        <color name="colorPrimary">#00BFFF</color>         <!-- Azul brilhante (cor da 42) -->
+        <color name="colorPrimaryDark">#0099CC</color>     <!-- Azul mais escuro -->
+        <color name="colorAccent">#FF4081</color>          <!-- Rosa accent -->
+        <color name="colorAccentDark">#C60055</color>      <!-- Rosa mais escuro -->
+
+        <color name="colorBackground">#121212</color>      <!-- Fundo quase preto -->
+        <color name="colorSurface">#1E1E1E</color>         <!-- Superfície um pouco mais clara -->
+        <color name="colorOnSurface">#FFFFFF</color>       <!-- Texto em superfícies -->
+
+        <color name="colorTextPrimary">#FFFFFF</color>     <!-- Texto primário branco -->
+        <color name="colorTextSecondary">#B3FFFFFF</color> <!-- Texto secundário com 70% de opacidade -->
+
+        <color name="cardBackground">#232323</color>       <!-- Fundo de cartões -->
+        <color name="dividerColor">#1FFFFFFF</color>       <!-- Divisor com 12% de opacidade -->
+
+</resources>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <style>
+    .calculator {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 15px;
+      background: #212121;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+    .display {
+      font-size: 2.5rem;
+      text-align: right;
+      background: #000;
+      color: lime;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      height: 60px;
+      overflow-x: auto;
+    }
+    .btn-large {
+      font-size: 1.3rem;
+      width: 100%;
+    }
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    @media (orientation: landscape) {
+      .calculator {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .display {
+        flex: 1;
+        height: 100%;
+      }
+      .calc-grid {
+        flex: 2;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body class="grey darken-4 white-text">
+
+<div id="app" class="calculator z-depth-3">
+  <div class="display">{{ display || '0' }}</div>
+  <div class="calc-grid">
+    <button class="btn-large red darken-1" @click="clear">C</button>
+    <button class="btn-large" @click="append('/')">÷</button>
+    <button class="btn-large" @click="append('*')">×</button>
+    <button class="btn-large" @click="append('-')">−</button>
+
+    <button class="btn-large" @click="append('7')">7</button>
+    <button class="btn-large" @click="append('8')">8</button>
+    <button class="btn-large" @click="append('9')">9</button>
+    <button class="btn-large" @click="append('+')">+</button>
+
+    <button class="btn-large" @click="append('4')">4</button>
+    <button class="btn-large" @click="append('5')">5</button>
+    <button class="btn-large" @click="append('6')">6</button>
+    <button class="btn-large green darken-1" @click="calculate">=</button>
+
+    <button class="btn-large" @click="append('1')">1</button>
+    <button class="btn-large" @click="append('2')">2</button>
+    <button class="btn-large" @click="append('3')">3</button>
+    <button class="btn-large" @click="append('.')">.</button>
+
+    <button class="btn-large" style="grid-column: span 4;" @click="append('0')">0</button>
+  </div>
+</div>
+
+<script src="js/vue.js"></script>
+<script>
+  Vue.createApp({
+    data() {
+      return {
+        display: ''
+      }
+    },
+    methods: {
+      append(val) {
+        this.display += val;
+      },
+      clear() {
+        this.display = '';
+      },
+      calculate() {
+        try {
+          this.display = eval(this.display).toString();
+        } catch {
+          this.display = 'Erro';
+        }
+      }
+    }
+  }).mount('#app');
+</script>
+</body>
+</html>

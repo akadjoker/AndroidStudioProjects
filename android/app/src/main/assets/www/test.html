@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ count: 0, nome: '' }">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Demo</title>
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="css/tabler-icons.min.css" />
+    <script src="js/alpine.min.js" defer></script>
+
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+
+            <h1 class="title">
+                <i class="ti ti-device-mobile"></i> WebApp Demo
+            </h1>
+
+            <!-- Input com binding -->
+            <div class="field">
+                <label class="label">Nome</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Escreve o teu nome..." x-model="nome">
+                </div>
+            </div>
+
+            <p class="subtitle">Olá, <strong x-text="nome || 'visitante'"></strong>!</p>
+
+            <!-- Botão contador -->
+            <button class="button is-primary" @click="count++">
+                <i class="ti ti-plus"></i> Cliquei <span x-text="count"></span> vezes
+            </button>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

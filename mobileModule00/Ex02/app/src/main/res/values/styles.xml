@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AppButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">#FFC107</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
 </resources>

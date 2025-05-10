@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity + Fragment Framework</title>
+    <style>
+        html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="core/Utils.js"></script>
+    <script src="core/Theme.js"></script>
+    <script src="core/Input.js"></script>
+    <script src="core/Tween.js"></script>
+    <script src="core/Graphics.js"></script>
+    <script src="core/Widget.js"></script>
+    <script src="core/Layout.js"></script>
+    <script src="core/Fragment.js"></script>
+    <script src="core/Activity.js"></script>
+    <script src="core/Label.js"></script>
+    <script src="core/Button.js"></script>
+    <script src="core/Panel.js"></script>
+    <script src="core/Checkbox.js"></script>
+    <script src="core/RadioItem.js"></script>
+    
+    
+    
+
+    <script>
+
+
+class Main extends Fragment
+{
+    
+   create()
+   {
+    this.panel = this.layout.add(new Panel(0,0,this.width,this.height,"Panel1"));
+    this.layout.add(new Label(20,10,"label"));
+    this.layout.add(new Button(20,20,"button"));
+    this.layout.add(new ToggleButton(20,60,true));
+    //this.layout.add(new Checkbox("CheckBox",true)).setPosition(350,110).setSize(20,20);
+    //this.layout.add(new RadioItem("Item",true)).setPosition(500,110);
+    
+
+        {
+        const group = new CheckboxGroup(2)
+            .add("Notificações")
+            .add("Localização")
+            .add("Teste", true)
+            .add("Som")
+            .setOnChange((label, val) => {
+                console.log(`${label}: ${val}`);
+            });
+            group.setPosition(10, 110);
+            group.setSize(190, 50);
+            this.layout.add(group);
+        }
+        {
+            const group = new RadioGroup(2)
+                .add("Notificações")
+                .add("Localização")
+                .add("Teste",true)
+                .add("Som")
+                .setOnChange((label, val) => {
+                    console.log(`${label}: ${val}`);
+                });
+            // group.add("Notificações");
+            // group.add("Localização");
+            // group.add("Teste");
+            // group.add("Som");
+            // group.setOnChange((label, val) => {
+            //     console.log(`${label}: ${val}`);
+            // });
+            group.setPosition(20, 200);
+            group.setSize(190, 50);
+            this.layout.add(group);
+
+            
+        }
+    
+    
+   }
+
+   render(g)
+   {
+    g.setColor("#00ff88");
+    g.fillCircle(100, 100, 2);
+   }
+   update(dt)
+   {
+       
+   }
+   resize(w,h)
+   {
+    this.panel.width = w;
+    this.panel.height = h;
+   }
+}
+
+window.addEventListener('load', () => 
+{
+    const canvas = document.getElementById('canvas');
+    const activity = new Activity(canvas);
+    activity.addFragment("main", new Main());
+    activity.setFragment("main");
+  
+    activity.start();
+});
+
+    </script>
+</body>
+</html>

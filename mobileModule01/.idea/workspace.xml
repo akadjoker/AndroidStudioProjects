@@ -4,7 +4,65 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a89848-2d73-4455-8ea5-b0992ae9573e" name="Changes" comment="" />
+    <list default="true" id="61a89848-2d73-4455-8ea5-b0992ae9573e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Weather_app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/androidTest/java/com/djokersoft/weather_app/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/java/com/djokersoft/weather_app/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/java/com/djokersoft/weather_app/ui/dashboard/DashboardFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/java/com/djokersoft/weather_app/ui/dashboard/DashboardViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/java/com/djokersoft/weather_app/ui/home/HomeFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/java/com/djokersoft/weather_app/ui/home/HomeViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/java/com/djokersoft/weather_app/ui/notifications/NotificationsFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/java/com/djokersoft/weather_app/ui/notifications/NotificationsViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/layout/fragment_dashboard.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/layout/fragment_notifications.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/app/src/test/java/com/djokersoft/weather_app/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Weather_app/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +71,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/home/djoker/.android/avd/Medium_Phone.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

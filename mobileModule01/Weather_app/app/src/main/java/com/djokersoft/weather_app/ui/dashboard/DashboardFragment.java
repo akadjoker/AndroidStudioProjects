@@ -10,22 +10,23 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.djokersoft.weather_app.Global;
+import com.djokersoft.weather_app.UpdatableFragment;
 import com.djokersoft.weather_app.databinding.FragmentDashboardBinding;
 
-public class DashboardFragment extends Fragment {
+public class DashboardFragment extends Fragment implements UpdatableFragment {
 
     private FragmentDashboardBinding binding;
-
+    TextView textView;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DashboardViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+
 
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        textView = binding.textDashboard;
+        onTextChanged(Global.sharedText);
         return root;
     }
 
@@ -33,5 +34,12 @@ public class DashboardFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+
+    @Override
+    public void onTextChanged(String newText)
+    {
+        textView.setText("Today\n" + newText);
     }
 }

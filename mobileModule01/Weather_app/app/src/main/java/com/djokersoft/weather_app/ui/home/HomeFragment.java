@@ -10,22 +10,23 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.djokersoft.weather_app.Global;
+import com.djokersoft.weather_app.UpdatableFragment;
 import com.djokersoft.weather_app.databinding.FragmentHomeBinding;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements UpdatableFragment {
 
     private FragmentHomeBinding binding;
-
+    TextView textView;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+       textView = binding.textHome;
+
+        onTextChanged( Global.sharedText);
         return root;
     }
 
@@ -33,5 +34,10 @@ public class HomeFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+    @Override
+    public void onTextChanged(String newText) {
+          textView.setText("Currently\n" + newText);
     }
 }
